@@ -42,6 +42,11 @@ matrix:
       dist: xenial
       sudo: required
       services: docker
+      env: DOCKER_IMAGE=docker.kitura.net/kitura/swift-ci:5.3.3 SWIFT_SNAPSHOT=5.3.3
+    - os: linux
+      dist: xenial
+      sudo: required
+      services: docker
       env: DOCKER_IMAGE=swift:5.1 SWIFT_SNAPSHOT=$SWIFT_DEVELOPMENT_SNAPSHOT
     - os: osx
       osx_image: xcode9.2

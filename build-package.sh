@@ -107,10 +107,6 @@ function travis_end () {
 # Additional packages can be installed by listing them in DOCKER_PACKAGES.
 #
 if [ -n "${DOCKER_IMAGE}" ]; then
-  if [ ! -z "${KITURA_DOCKER_USER}" -a ! -z "${KITURA_DOCKER_PASSWORD}" -a $(echo "${DOCKER_IMAGE}" | egrep -c "^docker.kitura.net") -ne 0 ]; then
-    echo "${KITURA_DOCKER_PASSWORD}" | docker login docker.kitura.net -u "${KITURA_DOCKER_USER}"
-  fi
-
   echo ">> Executing build in Docker container: ${DOCKER_IMAGE}"
   # Check if privileged mode has been requested for
   if [ -n "${DOCKER_PRIVILEGED}" ]; then
