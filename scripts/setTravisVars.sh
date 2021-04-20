@@ -17,7 +17,7 @@ REPO_COUNT=`echo $REPOS | wc -w`
 TRAVIS_ENV_VAR="SWIFT_DEVELOPMENT_SNAPSHOT"
 
 # The value to be set
-TRAVIS_ENV_VALUE="swift-DEVELOPMENT-SNAPSHOT-2018-11-25-a"
+TRAVIS_ENV_VALUE="swift-5.2-DEVELOPMENT-SNAPSHOT-2020-04-27-a"
 
 # The type of var: public is visible, private is hidden (eg. for credentials)
 TRAVIS_ENV_TYPE="public"
